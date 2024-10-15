@@ -1,0 +1,13 @@
+.explanation{
+    display: flex;
+    flex-direction: column;
+    .mbtiDetails{
+        height: 315px;
+        width: 100%;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 90px;
+    }
+}

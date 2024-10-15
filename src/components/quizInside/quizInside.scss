@@ -1,0 +1,57 @@
+.qA {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffe550;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  li {
+    background-color: #ffeed7;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    color: #333;
+
+    &:hover {
+      background-color: #aeffd1;
+    }
+  }
+
+  li.correct {
+    background-color: #8bc34a;
+  }
+
+  li.incorrect {
+    background-color: #f44336;
+  }
+
+  li.selected {
+    pointer-events: none; 
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px; 
+    font-size: 35px;
+    font-weight: 500;
+    color: #5a4cd7;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8),
+      0 2px 4px rgba(0, 0, 0, 0.2), 
+      0 3px 6px rgba(232, 232, 232, 0.802), 
+      0 5px 5px rgba(212, 211, 211, 0.932); 
+    font-family: "Play";
+    flex-direction: column;
+  }
+}

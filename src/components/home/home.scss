@@ -1,0 +1,31 @@
+
+  .backButton {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 850;
+    font-family: "Arial";
+    align-items: center;
+    color: green;
+    padding: 15px;
+    img {
+      height: 60px;
+      width: 60px;
+    }
+  }
+  .categories {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 50px;
+    margin-top: 30px;
+    padding: 30px;
+  }
+@media screen and (max-width: 320px) {
+  .home {
+    .categories {
+      padding: 0px;
+    }
+  }
+}

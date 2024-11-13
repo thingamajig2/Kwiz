@@ -1,5 +1,9 @@
 .subMap{
     display: flex;
     gap: 30px;
-    padding: 25px;
+}
+@media screen and (max-width: 425px) {
+    .subMap{
+        flex-direction: column;
+    }
 }

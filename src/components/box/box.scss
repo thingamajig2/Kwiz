@@ -7,6 +7,7 @@
     align-items: center;
     flex-direction: column;
     gap: 5px;
+    margin-left: 20px;
     border-radius: 35px;
     background-color: #b5eeea;
     &:hover{
@@ -27,7 +28,11 @@
 }
 @media screen and (max-width: 320px) {
     .boxStructure {
-        width: 250px;
-        height: 150px;
+        width: 200px;
+        height: 100px;
+        gap: 0px;
+        span{
+            font-size: 19px;
+        }
     }
 }

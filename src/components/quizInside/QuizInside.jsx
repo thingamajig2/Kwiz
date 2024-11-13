@@ -37,7 +37,7 @@ const QuizInside = ({ title }) => {
     let maxKey = Object.keys(hobbyResults).reduce((a, b) =>
       hobbyResults[a] > hobbyResults[b] ? a : b
     );
-  
+
     return maxKey;
   };
 
@@ -89,7 +89,6 @@ const QuizInside = ({ title }) => {
       setIsQuizFinished(true);
     }
   };
-
   return (
     <div className="qA">
       {isQuizFinished ? (
@@ -97,9 +96,7 @@ const QuizInside = ({ title }) => {
           finalResult={
             isMbtiTest ? finalMbtiRes : isHobbiesTest ? finalHobbyRes : score
           }
-          type={
-            isMbtiTest ? 'mbti' : isHobbiesTest ? 'hobby' : 'score'
-          }
+          type={isMbtiTest ? "mbti" : isHobbiesTest ? "hobby" : "score"}
         />
       ) : (
         <>

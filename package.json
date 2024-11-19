@@ -1,6 +1,6 @@
 {
   "name": "quiz",
-  "homepage": "https://thingamajig2.github.io/Kwiz",
+  "homepage": "https://quick-kwiz.netlify.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

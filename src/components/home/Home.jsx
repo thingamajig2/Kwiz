@@ -22,6 +22,9 @@ const Home = () => {
 
   return (
     <div className="home">
+      <div className = "intro">
+        <span>Welcome to Kwiz! To test your knowledge and your personality or get advice for your future, try out the many quizzes in the categories below!</span>
+      </div>
       {subCat ? (
         <>
           <div className="backButton" onClick={back}>

@@ -1,4 +1,12 @@
-
+.intro{
+  padding: 20px;
+  span{
+    font-weight: 800;
+    font-family: "Play";
+    font-size: 36px;
+    color: rgb(30, 94, 63);
+  }
+}
   .backButton {
     display: flex;
     gap: 10px;

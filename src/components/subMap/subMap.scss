@@ -1,6 +1,7 @@
 .subMap{
     display: flex;
     gap: 30px;
+    cursor: pointer;
 }
 @media screen and (max-width: 425px) {
     .subMap{

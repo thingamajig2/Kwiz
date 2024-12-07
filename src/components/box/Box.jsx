@@ -1,13 +1,25 @@
-import './box.scss';
+import "./box.scss";
 
-const Box = ({ title, image, backgroundImage, handleClick }) => {
-
-    return (
-        <div className='boxStructure' style={{ backgroundImage: `url("${backgroundImage}")` }} onClick={handleClick}>
-            <span> {title} </span>
-            {image && <img src={image} alt={title} />}
+const Box = ({ item, handleClick }) => {
+  return (
+    <>
+      {item ? (
+        <div className="box">
+          <div
+            className="boxStructure"
+            style={{ backgroundImage: `url("${item.backgroundImage}")` }}
+            onClick={handleClick}
+          >
+            <span> {item.title} </span>
+            {item.image && <img src={item.image} alt={item.title} />}
+          </div>
+          <span>{item.desc}</span>
         </div>
-    )
-}
+      ) : (
+        <span>Loading...</span>
+      )}
+    </>
+  );
+};
 
 export default Box;

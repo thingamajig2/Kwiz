@@ -11,22 +11,22 @@ const SubMap = ({ category }) => {
     setTitle(title);
   };
 
+  const filteredItems = subData.filter((item) => item.category === category);
+
+  console.log(subData,'subData');
+
   return (
     <div className="subMap">
       {title ? (
         <QuizInside title={title} />
       ) : (
-        subData
-          .filter((item) => item.category === category)
-          .map((item, index) => (
-            <Box
-              title={item.title}
-              image={item.image}
-              backgroundImage={item.backgroundImage}
-              key={Math.random() * index}
-              handleClick={() => handleClick(item.title)}
-            />
-          ))
+        filteredItems.map((item, index) => (
+          <Box
+            item={item || { title: "Untitled", backgroundImage: "", desc: "" }}
+            key={`${item.title}-${index}`}
+            handleClick={() => handleClick(item?.title || "")}
+          />
+        ))
       )}
     </div>
   );

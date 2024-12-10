@@ -1,6 +1,17 @@
 .box{
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+
+    span{
+        font-size: 22px;
+        font-family: "Happy Monkey";
+        font-weight: 1000;
+        text-align: center;
+        max-width: 375px;
+    }
 
     .boxStructure {
         height: 200px;
@@ -10,7 +21,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 5px;
+        gap: 15px;
         margin-left: 20px;
         border-radius: 35px;
         background-color: #b5eeea;
@@ -24,6 +35,7 @@
             font-weight: 900;
             text-shadow: 3px 2px 1px #2e8ca6, 3px 3px 2px rgb(255, 166, 0);
             font-size: 27px;
+            font-family: "Play";
         }
     
         img {

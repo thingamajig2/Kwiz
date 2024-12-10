@@ -22,7 +22,7 @@ export const subData =
         title: 'Countries of the World',
         backgroundImage: 'https://img.freepik.com/free-vector/gradient-dynamic-blue-lines-background_23-2148995756.jpg',
         category: 'Geography',
-        desc: "Can you name the nations of the world or identify their flags? Test your geography skills here.",
+        desc: "Can you name the nations of the world? Test your geography skills here.",
     },
     {
         title: 'Historical Figures',

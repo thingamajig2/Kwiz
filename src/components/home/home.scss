@@ -26,9 +26,15 @@
     justify-items: center;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-column-gap: 40px;
-    grid-row-gap: 50px;
+    grid-row-gap: 60px;
     margin-top: 30px;
     padding: 30px;
+
+    span{
+      font-size: 22px;
+      font-family: "Happy Monkey";
+      font-weight: 1000;
+    }
   }
 @media screen and (max-width: 320px) {
   .home {

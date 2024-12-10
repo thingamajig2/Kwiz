@@ -46,6 +46,6 @@
 
 @media (min-width: 1025px) {
   .App {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
